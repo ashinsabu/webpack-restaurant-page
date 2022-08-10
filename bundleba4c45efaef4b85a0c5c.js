@@ -2,6 +2,39 @@
 /******/ 	"use strict";
 /******/ 	var __webpack_modules__ = ({
 
+/***/ "./src/contactPage.js":
+/*!****************************!*\
+  !*** ./src/contactPage.js ***!
+  \****************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony import */ var _styles_contactPage_css__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./styles/contactPage.css */ "./src/styles/contactPage.css");
+
+
+var Contact = function Contact() {
+  var contactContainer = document.createElement('div');
+  contactContainer.className = 'contact-container';
+  var phone = document.createElement('p');
+  phone.className = 'phone';
+  phone.innerHTML = '📞 123 456 789';
+  var address = document.createElement('p');
+  address.className = 'address';
+  address.innerHTML = '🏠 3rd St., HSR Layout, Bangalore';
+  var email = document.createElement('p');
+  email.className = 'email';
+  email.innerHTML = '📧 legato@xyz.xyz';
+  contactContainer.append(phone, address, email);
+  return contactContainer;
+};
+
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (Contact);
+
+/***/ }),
+
 /***/ "./src/foods.js":
 /*!**********************!*\
   !*** ./src/foods.js ***!
@@ -138,6 +171,32 @@ var Menu = function Menu() {
 
 /***/ }),
 
+/***/ "./node_modules/css-loader/dist/cjs.js!./node_modules/sass-loader/dist/cjs.js!./src/styles/contactPage.css":
+/*!*****************************************************************************************************************!*\
+  !*** ./node_modules/css-loader/dist/cjs.js!./node_modules/sass-loader/dist/cjs.js!./src/styles/contactPage.css ***!
+  \*****************************************************************************************************************/
+/***/ ((module, __webpack_exports__, __webpack_require__) => {
+
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony import */ var _node_modules_css_loader_dist_runtime_sourceMaps_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../../node_modules/css-loader/dist/runtime/sourceMaps.js */ "./node_modules/css-loader/dist/runtime/sourceMaps.js");
+/* harmony import */ var _node_modules_css_loader_dist_runtime_sourceMaps_js__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_node_modules_css_loader_dist_runtime_sourceMaps_js__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../../node_modules/css-loader/dist/runtime/api.js */ "./node_modules/css-loader/dist/runtime/api.js");
+/* harmony import */ var _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_1__);
+// Imports
+
+
+var ___CSS_LOADER_EXPORT___ = _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_1___default()((_node_modules_css_loader_dist_runtime_sourceMaps_js__WEBPACK_IMPORTED_MODULE_0___default()));
+// Module
+___CSS_LOADER_EXPORT___.push([module.id, ".contact-container p {\n  color: white;\n  font-size: 22px;\n  font-family: \"Quicksand\", sans-serif;\n  margin-bottom: 16px;\n}\n\n.contact-container {\n  margin-bottom: 42px;\n}", "",{"version":3,"sources":["webpack://./src/styles/contactPage.css"],"names":[],"mappings":"AAAA;EACI,YAAA;EACA,eAAA;EACA,oCAAA;EACA,mBAAA;AACJ;;AACA;EACI,mBAAA;AAEJ","sourcesContent":[".contact-container p{\r\n    color: white;\r\n    font-size: 22px;\r\n    font-family: 'Quicksand',sans-serif;\r\n    margin-bottom: 16px;\r\n}\r\n.contact-container{\r\n    margin-bottom: 42px;\r\n}"],"sourceRoot":""}]);
+// Exports
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (___CSS_LOADER_EXPORT___);
+
+
+/***/ }),
+
 /***/ "./node_modules/css-loader/dist/cjs.js!./node_modules/sass-loader/dist/cjs.js!./src/styles/menuPage.css":
 /*!**************************************************************************************************************!*\
   !*** ./node_modules/css-loader/dist/cjs.js!./node_modules/sass-loader/dist/cjs.js!./src/styles/menuPage.css ***!
@@ -157,7 +216,7 @@ __webpack_require__.r(__webpack_exports__);
 
 var ___CSS_LOADER_EXPORT___ = _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_1___default()((_node_modules_css_loader_dist_runtime_sourceMaps_js__WEBPACK_IMPORTED_MODULE_0___default()));
 // Module
-___CSS_LOADER_EXPORT___.push([module.id, ".menu-container {\n  display: flex;\n  flex-direction: column;\n  align-items: center;\n  gap: 16px;\n}\n\n.menu-container h2 {\n  color: white;\n  font-family: \"Quicksand\", sans-serif;\n  font-size: 48px;\n}\n\n.menu-item {\n  cursor: pointer;\n  width: 60%;\n  padding: 30px 64px;\n  display: flex;\n  gap: 8px;\n  color: white;\n  background-color: rgba(20, 20, 20, 0.621);\n}\n\n.menu-item:hover {\n  background-color: rgba(208, 208, 208, 0.24);\n}\n\n.item-image {\n  width: 128px;\n  height: 128px;\n}\n\n.item-info h3 {\n  font-family: \"Quicksand\", sans-serif;\n  font-weight: 600;\n  font-size: 24px;\n  margin-bottom: 8px;\n}\n\n.item-info p {\n  font-family: \"Quicksand\", sans-serif;\n}", "",{"version":3,"sources":["webpack://./src/styles/menuPage.css"],"names":[],"mappings":"AAAA;EACI,aAAA;EACA,sBAAA;EACA,mBAAA;EACA,SAAA;AACJ;;AACA;EACI,YAAA;EACA,oCAAA;EACA,eAAA;AAEJ;;AAAA;EACI,eAAA;EACA,UAAA;EACA,kBAAA;EACA,aAAA;EACA,QAAA;EACA,YAAA;EACA,yCAAA;AAGJ;;AADA;EACI,2CAAA;AAIJ;;AAFA;EACI,YAAA;EACA,aAAA;AAKJ;;AAHA;EACI,oCAAA;EACA,gBAAA;EACA,eAAA;EACA,kBAAA;AAMJ;;AAJA;EACI,oCAAA;AAOJ","sourcesContent":[".menu-container{\r\n    display: flex;\r\n    flex-direction: column;\r\n    align-items: center;\r\n    gap: 16px;\r\n}\r\n.menu-container h2{\r\n    color: white;\r\n    font-family: 'Quicksand', sans-serif;\r\n    font-size: 48px;\r\n}\r\n.menu-item{\r\n    cursor: pointer;\r\n    width: 60%;\r\n    padding: 30px 64px;\r\n    display: flex;\r\n    gap: 8px;\r\n    color: white;\r\n    background-color: rgba(20, 20, 20, 0.621);\r\n}\r\n.menu-item:hover{\r\n    background-color: rgba(208, 208, 208, 0.24);\r\n}\r\n.item-image{\r\n    width: 128px;\r\n    height: 128px;\r\n}\r\n.item-info h3{\r\n    font-family: 'Quicksand', sans-serif;\r\n    font-weight: 600;\r\n    font-size: 24px;\r\n    margin-bottom: 8px;\r\n}\r\n.item-info p{\r\n    font-family: 'Quicksand', sans-serif;\r\n\r\n}"],"sourceRoot":""}]);
+___CSS_LOADER_EXPORT___.push([module.id, ".menu-container {\n  display: flex;\n  flex-direction: column;\n  align-items: center;\n  gap: 16px;\n}\n\n.menu-container h2 {\n  color: white;\n  font-family: \"Quicksand\", sans-serif;\n  font-size: 48px;\n}\n\n.menu-item {\n  cursor: pointer;\n  width: 60%;\n  padding: 30px 64px;\n  display: flex;\n  gap: 8px;\n  color: white;\n  background-color: rgba(20, 20, 20, 0.621);\n}\n\n.menu-item:hover {\n  background-color: rgba(208, 208, 208, 0.24);\n}\n\n.item-image {\n  width: 128px;\n  height: 128px;\n}\n\n.item-info h3 {\n  font-family: \"Quicksand\", sans-serif;\n  font-weight: 600;\n  font-size: 24px;\n  margin-bottom: 8px;\n}\n\n.item-info p {\n  font-family: \"Quicksand\", sans-serif;\n}\n\n@media only all and (max-width: 700px) {\n  .menu-container h2 {\n    font-size: 42px;\n  }\n  .menu-item {\n    flex-direction: column;\n    align-items: center;\n  }\n  .item-info {\n    text-align: center;\n  }\n}", "",{"version":3,"sources":["webpack://./src/styles/menuPage.css"],"names":[],"mappings":"AAAA;EACI,aAAA;EACA,sBAAA;EACA,mBAAA;EACA,SAAA;AACJ;;AACA;EACI,YAAA;EACA,oCAAA;EACA,eAAA;AAEJ;;AAAA;EACI,eAAA;EACA,UAAA;EACA,kBAAA;EACA,aAAA;EACA,QAAA;EACA,YAAA;EACA,yCAAA;AAGJ;;AADA;EACI,2CAAA;AAIJ;;AAFA;EACI,YAAA;EACA,aAAA;AAKJ;;AAHA;EACI,oCAAA;EACA,gBAAA;EACA,eAAA;EACA,kBAAA;AAMJ;;AAJA;EACI,oCAAA;AAOJ;;AAHA;EACI;IACI,eAAA;EAMN;EAJE;IACI,sBAAA;IACA,mBAAA;EAMN;EAJE;IACI,kBAAA;EAMN;AACF","sourcesContent":[".menu-container{\r\n    display: flex;\r\n    flex-direction: column;\r\n    align-items: center;\r\n    gap: 16px;\r\n}\r\n.menu-container h2{\r\n    color: white;\r\n    font-family: 'Quicksand', sans-serif;\r\n    font-size: 48px;\r\n}\r\n.menu-item{\r\n    cursor: pointer;\r\n    width: 60%;\r\n    padding: 30px 64px;\r\n    display: flex;\r\n    gap: 8px;\r\n    color: white;\r\n    background-color: rgba(20, 20, 20, 0.621);\r\n}\r\n.menu-item:hover{\r\n    background-color: rgba(208, 208, 208, 0.24);\r\n}\r\n.item-image{\r\n    width: 128px;\r\n    height: 128px;\r\n}\r\n.item-info h3{\r\n    font-family: 'Quicksand', sans-serif;\r\n    font-weight: 600;\r\n    font-size: 24px;\r\n    margin-bottom: 8px;\r\n}\r\n.item-info p{\r\n    font-family: 'Quicksand', sans-serif;\r\n\r\n}\r\n\r\n@media only all and (max-width: 700px){\r\n    .menu-container h2{\r\n        font-size: 42px;\r\n    }\r\n    .menu-item{\r\n        flex-direction: column;\r\n        align-items: center;\r\n    }\r\n    .item-info{\r\n        text-align: center;\r\n    }\r\n}"],"sourceRoot":""}]);
 // Exports
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (___CSS_LOADER_EXPORT___);
 
@@ -190,7 +249,7 @@ ___CSS_LOADER_EXPORT___.push([module.id, "@import url(https://fonts.googleapis.c
 ___CSS_LOADER_EXPORT___.push([module.id, "@import url(https://fonts.googleapis.com/css2?family=Montserrat&display=swap);"]);
 var ___CSS_LOADER_URL_REPLACEMENT_0___ = _node_modules_css_loader_dist_runtime_getUrl_js__WEBPACK_IMPORTED_MODULE_2___default()(___CSS_LOADER_URL_IMPORT_0___);
 // Module
-___CSS_LOADER_EXPORT___.push([module.id, "/* CSS RESET */\nbody, h1, h2, h3, h4, h5, h6, p, ol, ul {\n  margin: 0;\n  padding: 0;\n  font-weight: normal;\n  font-family: \"Segoe UI\", Tahoma, Geneva, Verdana, sans-serif;\n}\n\nol, ul {\n  list-style: none;\n}\n\nimg {\n  max-width: 100%;\n  height: auto;\n}\n\na {\n  text-decoration: none;\n}\n\n/* DONE */\nbody {\n  background-image: url(" + ___CSS_LOADER_URL_REPLACEMENT_0___ + ");\n  background-repeat: no-repeat;\n  background-attachment: fixed;\n  background-size: cover;\n}\n\n.content {\n  display: flex;\n  flex-direction: column;\n  align-items: center;\n}\n\n.header {\n  display: flex;\n  flex-direction: column;\n  align-items: center;\n  width: 100%;\n  color: white;\n  padding-bottom: 32px;\n  background-color: rgba(20, 20, 20, 0.685);\n}\n\n.title {\n  font-family: \"Quicksand\", sans-serif;\n  font-size: 64px;\n  font-weight: 400;\n  padding: 32px;\n}\n\n.navbar {\n  display: flex;\n  gap: 24px;\n  font-size: 22px;\n  font-family: \"Montserrat\", sans-serif;\n}\n\n.navbar-link {\n  padding: 8px;\n  cursor: pointer;\n  transition: transform 0.3s ease-in-out;\n}\n\n.navbar-link:hover {\n  transform: translateY(-5px);\n}\n\n.navbar-link.active {\n  border-bottom: 1.5px solid white;\n}\n\n.page-content {\n  max-width: 700px;\n  padding: 4rem;\n  margin: 6rem 0;\n  background-color: rgba(20, 20, 20, 0.685);\n  border: 1px solid rgba(113, 113, 113, 0.719);\n}\n\n.home-container {\n  color: rgba(255, 255, 255, 0.819);\n  display: flex;\n  flex-direction: column;\n  align-items: center;\n  text-align: center;\n  font-family: \"Montserrat\", sans-serif;\n  font-size: 20px;\n}\n\n.home-slogan {\n  margin-bottom: 16px;\n}\n\n.chef-img {\n  width: 256px;\n  height: 320px;\n  border-radius: 50%;\n  margin-top: 32px;\n  margin-bottom: 32px;\n}\n\n.footer {\n  padding-top: 16px;\n  padding-bottom: 16px;\n  width: 100%;\n  text-align: center;\n  color: rgba(255, 255, 255, 0.819);\n  background-color: rgba(20, 20, 20, 0.685);\n}\n\n.footer a {\n  color: grey;\n}", "",{"version":3,"sources":["webpack://./src/styles/style.css"],"names":[],"mappings":"AAIA,cAAA;AACA;EACI,SAAA;EACA,UAAA;EACA,mBAAA;EACA,4DAAA;AADJ;;AAIA;EACI,gBAAA;AADJ;;AAIA;EACI,eAAA;EACA,YAAA;AADJ;;AAGA;EACI,qBAAA;AAAJ;;AAIA,SAAA;AAEA;EACI,yDAAA;EACA,4BAAA;EACA,4BAAA;EACA,sBAAA;AAFJ;;AAIA;EACI,aAAA;EACA,sBAAA;EACA,mBAAA;AADJ;;AAGA;EACI,aAAA;EACA,sBAAA;EACA,mBAAA;EACA,WAAA;EACA,YAAA;EACA,oBAAA;EACA,yCAAA;AAAJ;;AAEA;EACI,oCAAA;EACA,eAAA;EACA,gBAAA;EACA,aAAA;AACJ;;AACA;EACI,aAAA;EACA,SAAA;EACA,eAAA;EACA,qCAAA;AAEJ;;AAAA;EACI,YAAA;EACA,eAAA;EACA,sCAAA;AAGJ;;AADA;EACI,2BAAA;AAIJ;;AAFA;EACI,gCAAA;AAKJ;;AAFA;EACI,gBAAA;EACA,aAAA;EACA,cAAA;EACA,yCAAA;EACA,4CAAA;AAKJ;;AAFA;EACI,iCAAA;EACA,aAAA;EACA,sBAAA;EACA,mBAAA;EACA,kBAAA;EACA,qCAAA;EACA,eAAA;AAKJ;;AAHA;EACI,mBAAA;AAMJ;;AAJA;EACI,YAAA;EACA,aAAA;EACA,kBAAA;EACA,gBAAA;EACA,mBAAA;AAOJ;;AALA;EACI,iBAAA;EACA,oBAAA;EACA,WAAA;EACA,kBAAA;EACA,iCAAA;EACA,yCAAA;AAQJ;;AANA;EACI,WAAA;AASJ","sourcesContent":["@import url('https://fonts.googleapis.com/css2?family=Quicksand&display=swap');\r\n@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');\r\n\r\n\r\n/* CSS RESET */  \r\nbody, h1, h2, h3, h4, h5, h6, p, ol, ul {\r\n    margin: 0;\r\n    padding: 0;\r\n    font-weight: normal;\r\n    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;\r\n}\r\n  \r\nol, ul {\r\n    list-style: none;\r\n}\r\n  \r\nimg {\r\n    max-width: 100%;\r\n    height: auto;\r\n}\r\na{\r\n    text-decoration: none;\r\n}\r\n\r\n\r\n/* DONE */\r\n\r\nbody{\r\n    background-image: url(\"../assets/bg.jpg\");\r\n    background-repeat: no-repeat;\r\n    background-attachment: fixed;\r\n    background-size: cover;\r\n}\r\n.content{\r\n    display: flex;\r\n    flex-direction: column;\r\n    align-items: center;\r\n}\r\n.header{\r\n    display: flex;\r\n    flex-direction: column;\r\n    align-items: center;\r\n    width: 100%;\r\n    color: white;\r\n    padding-bottom: 32px;\r\n    background-color: rgba(20, 20, 20, 0.685);\r\n}\r\n.title{\r\n    font-family: 'Quicksand', sans-serif;\r\n    font-size: 64px;\r\n    font-weight: 400;\r\n    padding: 32px;\r\n}\r\n.navbar{\r\n    display: flex;\r\n    gap: 24px;\r\n    font-size: 22px;\r\n    font-family: 'Montserrat', sans-serif;\r\n}\r\n.navbar-link{\r\n    padding: 8px;\r\n    cursor: pointer;\r\n    transition: transform 0.3s ease-in-out;\r\n}\r\n.navbar-link:hover{\r\n    transform: translateY(-5px);\r\n}\r\n.navbar-link.active{    \r\n    border-bottom: 1.5px solid white;\r\n}\r\n\r\n.page-content{\r\n    max-width: 700px;\r\n    padding: 4rem;\r\n    margin: 6rem 0;\r\n    background-color: rgba(20, 20, 20, 0.685);\r\n    border: 1px solid rgba(113, 113, 113, 0.719);\r\n    \r\n}\r\n.home-container{\r\n    color: rgba(255, 255, 255, 0.819);\r\n    display: flex;\r\n    flex-direction: column;\r\n    align-items: center;\r\n    text-align: center;\r\n    font-family: 'Montserrat', sans-serif;\r\n    font-size: 20px;\r\n}\r\n.home-slogan{\r\n    margin-bottom: 16px;\r\n}\r\n.chef-img{\r\n    width: 256px;\r\n    height: 320px;\r\n    border-radius: 50%;\r\n    margin-top: 32px;\r\n    margin-bottom: 32px;\r\n}\r\n.footer{\r\n    padding-top: 16px;\r\n    padding-bottom: 16px;\r\n    width: 100%;\r\n    text-align: center;\r\n    color: rgba(255, 255, 255, 0.819);\r\n    background-color: rgba(20, 20, 20, 0.685);\r\n}\r\n.footer a{\r\n    color: grey;\r\n}"],"sourceRoot":""}]);
+___CSS_LOADER_EXPORT___.push([module.id, "/* CSS RESET */\nbody, h1, h2, h3, h4, h5, h6, p, ol, ul {\n  margin: 0;\n  padding: 0;\n  font-weight: normal;\n  font-family: \"Segoe UI\", Tahoma, Geneva, Verdana, sans-serif;\n}\n\nol, ul {\n  list-style: none;\n}\n\nimg {\n  max-width: 100%;\n  height: auto;\n}\n\na {\n  text-decoration: none;\n}\n\n/* DONE */\nbody {\n  background-image: url(" + ___CSS_LOADER_URL_REPLACEMENT_0___ + ");\n  background-repeat: no-repeat;\n  background-attachment: fixed;\n  background-size: cover;\n}\n\n.content {\n  display: flex;\n  flex-direction: column;\n  align-items: center;\n}\n\n.header {\n  display: flex;\n  flex-direction: column;\n  align-items: center;\n  width: 100%;\n  color: white;\n  padding-bottom: 32px;\n  background-color: rgba(20, 20, 20, 0.685);\n}\n\n.title {\n  font-family: \"Quicksand\", sans-serif;\n  font-size: 64px;\n  font-weight: 400;\n  padding: 32px;\n}\n\n.navbar {\n  display: flex;\n  gap: 24px;\n  font-size: 22px;\n  font-family: \"Montserrat\", sans-serif;\n}\n\n.navbar-link {\n  padding: 8px;\n  cursor: pointer;\n  transition: transform 0.3s ease-in-out;\n}\n\n.navbar-link:hover {\n  transform: translateY(-5px);\n}\n\n.navbar-link.active {\n  border-bottom: 1.5px solid white;\n}\n\n.page-content {\n  width: 60%;\n  padding: 4rem;\n  margin: 6rem 0;\n  background-color: rgba(20, 20, 20, 0.685);\n  border: 1px solid rgba(113, 113, 113, 0.719);\n}\n\n.home-container {\n  color: rgba(255, 255, 255, 0.819);\n  display: flex;\n  flex-direction: column;\n  align-items: center;\n  text-align: center;\n  font-family: \"Montserrat\", sans-serif;\n  font-size: 20px;\n}\n\n.home-slogan {\n  margin-bottom: 16px;\n}\n\n.chef-img {\n  width: 256px;\n  height: 320px;\n  border-radius: 50%;\n  margin-top: 32px;\n  margin-bottom: 32px;\n}\n\n.footer {\n  padding-top: 16px;\n  padding-bottom: 16px;\n  width: 100%;\n  text-align: center;\n  color: rgba(255, 255, 255, 0.819);\n  background-color: rgba(20, 20, 20, 0.685);\n}\n\n.footer a {\n  color: grey;\n}", "",{"version":3,"sources":["webpack://./src/styles/style.css"],"names":[],"mappings":"AAIA,cAAA;AACA;EACI,SAAA;EACA,UAAA;EACA,mBAAA;EACA,4DAAA;AADJ;;AAIA;EACI,gBAAA;AADJ;;AAIA;EACI,eAAA;EACA,YAAA;AADJ;;AAGA;EACI,qBAAA;AAAJ;;AAIA,SAAA;AAEA;EACI,yDAAA;EACA,4BAAA;EACA,4BAAA;EACA,sBAAA;AAFJ;;AAIA;EACI,aAAA;EACA,sBAAA;EACA,mBAAA;AADJ;;AAGA;EACI,aAAA;EACA,sBAAA;EACA,mBAAA;EACA,WAAA;EACA,YAAA;EACA,oBAAA;EACA,yCAAA;AAAJ;;AAEA;EACI,oCAAA;EACA,eAAA;EACA,gBAAA;EACA,aAAA;AACJ;;AACA;EACI,aAAA;EACA,SAAA;EACA,eAAA;EACA,qCAAA;AAEJ;;AAAA;EACI,YAAA;EACA,eAAA;EACA,sCAAA;AAGJ;;AADA;EACI,2BAAA;AAIJ;;AAFA;EACI,gCAAA;AAKJ;;AAFA;EACI,UAAA;EACA,aAAA;EACA,cAAA;EACA,yCAAA;EACA,4CAAA;AAKJ;;AAFA;EACI,iCAAA;EACA,aAAA;EACA,sBAAA;EACA,mBAAA;EACA,kBAAA;EACA,qCAAA;EACA,eAAA;AAKJ;;AAHA;EACI,mBAAA;AAMJ;;AAJA;EACI,YAAA;EACA,aAAA;EACA,kBAAA;EACA,gBAAA;EACA,mBAAA;AAOJ;;AALA;EACI,iBAAA;EACA,oBAAA;EACA,WAAA;EACA,kBAAA;EACA,iCAAA;EACA,yCAAA;AAQJ;;AANA;EACI,WAAA;AASJ","sourcesContent":["@import url('https://fonts.googleapis.com/css2?family=Quicksand&display=swap');\r\n@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');\r\n\r\n\r\n/* CSS RESET */  \r\nbody, h1, h2, h3, h4, h5, h6, p, ol, ul {\r\n    margin: 0;\r\n    padding: 0;\r\n    font-weight: normal;\r\n    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;\r\n}\r\n  \r\nol, ul {\r\n    list-style: none;\r\n}\r\n  \r\nimg {\r\n    max-width: 100%;\r\n    height: auto;\r\n}\r\na{\r\n    text-decoration: none;\r\n}\r\n\r\n\r\n/* DONE */\r\n\r\nbody{\r\n    background-image: url(\"../assets/bg.jpg\");\r\n    background-repeat: no-repeat;\r\n    background-attachment: fixed;\r\n    background-size: cover;\r\n}\r\n.content{\r\n    display: flex;\r\n    flex-direction: column;\r\n    align-items: center;\r\n}\r\n.header{\r\n    display: flex;\r\n    flex-direction: column;\r\n    align-items: center;\r\n    width: 100%;\r\n    color: white;\r\n    padding-bottom: 32px;\r\n    background-color: rgba(20, 20, 20, 0.685);\r\n}\r\n.title{\r\n    font-family: 'Quicksand', sans-serif;\r\n    font-size: 64px;\r\n    font-weight: 400;\r\n    padding: 32px;\r\n}\r\n.navbar{\r\n    display: flex;\r\n    gap: 24px;\r\n    font-size: 22px;\r\n    font-family: 'Montserrat', sans-serif;\r\n}\r\n.navbar-link{\r\n    padding: 8px;\r\n    cursor: pointer;\r\n    transition: transform 0.3s ease-in-out;\r\n}\r\n.navbar-link:hover{\r\n    transform: translateY(-5px);\r\n}\r\n.navbar-link.active{    \r\n    border-bottom: 1.5px solid white;\r\n}\r\n\r\n.page-content{\r\n    width: 60%;\r\n    padding: 4rem;\r\n    margin: 6rem 0;\r\n    background-color: rgba(20, 20, 20, 0.685);\r\n    border: 1px solid rgba(113, 113, 113, 0.719);\r\n    \r\n}\r\n.home-container{\r\n    color: rgba(255, 255, 255, 0.819);\r\n    display: flex;\r\n    flex-direction: column;\r\n    align-items: center;\r\n    text-align: center;\r\n    font-family: 'Montserrat', sans-serif;\r\n    font-size: 20px;\r\n}\r\n.home-slogan{\r\n    margin-bottom: 16px;\r\n}\r\n.chef-img{\r\n    width: 256px;\r\n    height: 320px;\r\n    border-radius: 50%;\r\n    margin-top: 32px;\r\n    margin-bottom: 32px;\r\n}\r\n.footer{\r\n    padding-top: 16px;\r\n    padding-bottom: 16px;\r\n    width: 100%;\r\n    text-align: center;\r\n    color: rgba(255, 255, 255, 0.819);\r\n    background-color: rgba(20, 20, 20, 0.685);\r\n}\r\n.footer a{\r\n    color: grey;\r\n}\r\n\r\n"],"sourceRoot":""}]);
 // Exports
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (___CSS_LOADER_EXPORT___);
 
@@ -374,6 +433,60 @@ module.exports = function (item) {
 
   return [content].join("\n");
 };
+
+/***/ }),
+
+/***/ "./src/styles/contactPage.css":
+/*!************************************!*\
+  !*** ./src/styles/contactPage.css ***!
+  \************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony import */ var _node_modules_style_loader_dist_runtime_injectStylesIntoStyleTag_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! !../../node_modules/style-loader/dist/runtime/injectStylesIntoStyleTag.js */ "./node_modules/style-loader/dist/runtime/injectStylesIntoStyleTag.js");
+/* harmony import */ var _node_modules_style_loader_dist_runtime_injectStylesIntoStyleTag_js__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_node_modules_style_loader_dist_runtime_injectStylesIntoStyleTag_js__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var _node_modules_style_loader_dist_runtime_styleDomAPI_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! !../../node_modules/style-loader/dist/runtime/styleDomAPI.js */ "./node_modules/style-loader/dist/runtime/styleDomAPI.js");
+/* harmony import */ var _node_modules_style_loader_dist_runtime_styleDomAPI_js__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_node_modules_style_loader_dist_runtime_styleDomAPI_js__WEBPACK_IMPORTED_MODULE_1__);
+/* harmony import */ var _node_modules_style_loader_dist_runtime_insertBySelector_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! !../../node_modules/style-loader/dist/runtime/insertBySelector.js */ "./node_modules/style-loader/dist/runtime/insertBySelector.js");
+/* harmony import */ var _node_modules_style_loader_dist_runtime_insertBySelector_js__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(_node_modules_style_loader_dist_runtime_insertBySelector_js__WEBPACK_IMPORTED_MODULE_2__);
+/* harmony import */ var _node_modules_style_loader_dist_runtime_setAttributesWithoutAttributes_js__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! !../../node_modules/style-loader/dist/runtime/setAttributesWithoutAttributes.js */ "./node_modules/style-loader/dist/runtime/setAttributesWithoutAttributes.js");
+/* harmony import */ var _node_modules_style_loader_dist_runtime_setAttributesWithoutAttributes_js__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(_node_modules_style_loader_dist_runtime_setAttributesWithoutAttributes_js__WEBPACK_IMPORTED_MODULE_3__);
+/* harmony import */ var _node_modules_style_loader_dist_runtime_insertStyleElement_js__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! !../../node_modules/style-loader/dist/runtime/insertStyleElement.js */ "./node_modules/style-loader/dist/runtime/insertStyleElement.js");
+/* harmony import */ var _node_modules_style_loader_dist_runtime_insertStyleElement_js__WEBPACK_IMPORTED_MODULE_4___default = /*#__PURE__*/__webpack_require__.n(_node_modules_style_loader_dist_runtime_insertStyleElement_js__WEBPACK_IMPORTED_MODULE_4__);
+/* harmony import */ var _node_modules_style_loader_dist_runtime_styleTagTransform_js__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! !../../node_modules/style-loader/dist/runtime/styleTagTransform.js */ "./node_modules/style-loader/dist/runtime/styleTagTransform.js");
+/* harmony import */ var _node_modules_style_loader_dist_runtime_styleTagTransform_js__WEBPACK_IMPORTED_MODULE_5___default = /*#__PURE__*/__webpack_require__.n(_node_modules_style_loader_dist_runtime_styleTagTransform_js__WEBPACK_IMPORTED_MODULE_5__);
+/* harmony import */ var _node_modules_css_loader_dist_cjs_js_node_modules_sass_loader_dist_cjs_js_contactPage_css__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! !!../../node_modules/css-loader/dist/cjs.js!../../node_modules/sass-loader/dist/cjs.js!./contactPage.css */ "./node_modules/css-loader/dist/cjs.js!./node_modules/sass-loader/dist/cjs.js!./src/styles/contactPage.css");
+
+      
+      
+      
+      
+      
+      
+      
+      
+      
+
+var options = {};
+
+options.styleTagTransform = (_node_modules_style_loader_dist_runtime_styleTagTransform_js__WEBPACK_IMPORTED_MODULE_5___default());
+options.setAttributes = (_node_modules_style_loader_dist_runtime_setAttributesWithoutAttributes_js__WEBPACK_IMPORTED_MODULE_3___default());
+
+      options.insert = _node_modules_style_loader_dist_runtime_insertBySelector_js__WEBPACK_IMPORTED_MODULE_2___default().bind(null, "head");
+    
+options.domAPI = (_node_modules_style_loader_dist_runtime_styleDomAPI_js__WEBPACK_IMPORTED_MODULE_1___default());
+options.insertStyleElement = (_node_modules_style_loader_dist_runtime_insertStyleElement_js__WEBPACK_IMPORTED_MODULE_4___default());
+
+var update = _node_modules_style_loader_dist_runtime_injectStylesIntoStyleTag_js__WEBPACK_IMPORTED_MODULE_0___default()(_node_modules_css_loader_dist_cjs_js_node_modules_sass_loader_dist_cjs_js_contactPage_css__WEBPACK_IMPORTED_MODULE_6__["default"], options);
+
+
+
+
+       /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (_node_modules_css_loader_dist_cjs_js_node_modules_sass_loader_dist_cjs_js_contactPage_css__WEBPACK_IMPORTED_MODULE_6__["default"] && _node_modules_css_loader_dist_cjs_js_node_modules_sass_loader_dist_cjs_js_contactPage_css__WEBPACK_IMPORTED_MODULE_6__["default"].locals ? _node_modules_css_loader_dist_cjs_js_node_modules_sass_loader_dist_cjs_js_contactPage_css__WEBPACK_IMPORTED_MODULE_6__["default"].locals : undefined);
+
 
 /***/ }),
 
@@ -1015,6 +1128,8 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _styles_style_css__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./styles/style.css */ "./src/styles/style.css");
 /* harmony import */ var _homePage__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./homePage */ "./src/homePage.js");
 /* harmony import */ var _menuPage__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./menuPage */ "./src/menuPage.js");
+/* harmony import */ var _contactPage__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./contactPage */ "./src/contactPage.js");
+
 
 
 
@@ -1037,6 +1152,13 @@ navBarLinks.forEach(function (navBarLink) {
       });
       navBarLink.classList.add('active');
       pageContent.append((0,_menuPage__WEBPACK_IMPORTED_MODULE_2__["default"])());
+    } else if (navBarLink.innerHTML == "Contact" && !navBarLink.classList.contains("active")) {
+      pageContent.innerHTML = "";
+      navBarLinks.forEach(function (x) {
+        x.classList.remove('active');
+      });
+      navBarLink.classList.add('active');
+      pageContent.append((0,_contactPage__WEBPACK_IMPORTED_MODULE_3__["default"])());
     }
   });
 });
@@ -1044,4 +1166,4 @@ navBarLinks.forEach(function (navBarLink) {
 
 /******/ })()
 ;
-//# sourceMappingURL=bundle75edd962cc3190b19f6b.js.map
+//# sourceMappingURL=bundleba4c45efaef4b85a0c5c.js.map
