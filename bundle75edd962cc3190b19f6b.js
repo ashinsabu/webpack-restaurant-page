@@ -1,4 +1,5 @@
 /******/ (() => { // webpackBootstrap
+/******/ 	"use strict";
 /******/ 	var __webpack_modules__ = ({
 
 /***/ "./src/foods.js":
@@ -7,36 +8,47 @@
   \**********************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
-"use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
 /* harmony export */ });
+/* harmony import */ var _assets_sweet_wine_png__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./assets/sweet-wine.png */ "./src/assets/sweet-wine.png");
+/* harmony import */ var _assets_whiskey_png__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./assets/whiskey.png */ "./src/assets/whiskey.png");
+/* harmony import */ var _assets_pizza_png__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./assets/pizza.png */ "./src/assets/pizza.png");
+/* harmony import */ var _assets_lobster_png__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./assets/lobster.png */ "./src/assets/lobster.png");
+/* harmony import */ var _assets_cheese_png__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./assets/cheese.png */ "./src/assets/cheese.png");
+/* harmony import */ var _assets_steak_png__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./assets/steak.png */ "./src/assets/steak.png");
+
+
+
+
+
+
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ({
   foods: [{
     name: "Wine",
     desc: "Choose between a vast selection of finely aged wines from across the globe.",
-    imgLink: "./assets/sweet-wine.png"
+    imgLink: _assets_sweet_wine_png__WEBPACK_IMPORTED_MODULE_0__
   }, {
     name: "Whiskey",
     desc: "Blended scotch bottled in Scotland. Smooth, medium peated, well-rounded with a touch of dryness.",
-    imgLink: "./assets/whiskey.png"
+    imgLink: _assets_whiskey_png__WEBPACK_IMPORTED_MODULE_1__
   }, {
     name: "Pizza",
     desc: "We strive to make every part of your pizza customizable. This means that you can choose from 3 different crusts and over two-dozen topping",
-    imgLink: "./assets/pizza.png"
+    imgLink: _assets_pizza_png__WEBPACK_IMPORTED_MODULE_2__
   }, {
     name: "Filet Mignon Steak",
     desc: "It's one of the most expensive cuts of beef because the muscle doesn't get much work, and it's so tender you could cut through it with a fork.",
-    imgLink: "./assets/steak.png"
+    imgLink: _assets_steak_png__WEBPACK_IMPORTED_MODULE_5__
   }, {
     name: "Lobster",
     desc: "Lobster is luxurious, delicious and the perfect food for a special occasion.",
-    imgLink: "./assets/lobster.png"
+    imgLink: _assets_lobster_png__WEBPACK_IMPORTED_MODULE_3__
   }, {
     name: "Gourmet Cheese",
     desc: "The most complex of all the cheeses, blue-veined gives you the best of both worlds: rich and creamy like a soft cheese.",
-    imgLink: "./assets/cheese.png"
+    imgLink: _assets_cheese_png__WEBPACK_IMPORTED_MODULE_4__
   }]
 });
 
@@ -48,7 +60,6 @@ __webpack_require__.r(__webpack_exports__);
   \*************************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
-"use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
@@ -85,7 +96,6 @@ var Home = function Home() {
   \*************************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
-"use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
@@ -98,16 +108,16 @@ __webpack_require__.r(__webpack_exports__);
 var Menu = function Menu() {
   var menuContainer = document.createElement('div');
   menuContainer.className = 'menu-container';
+  var mainTitle = document.createElement('h2');
+  mainTitle.textContent = "Our Menu";
+  menuContainer.append(mainTitle);
   var foods = _foods__WEBPACK_IMPORTED_MODULE_1__["default"].foods;
 
   for (var i = 0; i < foods.length; i++) {
     var menuItem = document.createElement('div');
     menuItem.className = 'menu-item';
-
-    var imgUrl = __webpack_require__("./src sync recursive")(foods[i]['imgLink']);
-
     var itemImage = document.createElement('img');
-    itemImage.src = imgUrl;
+    itemImage.src = foods[i]['imgLink'];
     itemImage.className = "item-image";
     var itemInfo = document.createElement('div');
     itemInfo.className = 'item-info';
@@ -120,6 +130,7 @@ var Menu = function Menu() {
     menuContainer.append(menuItem);
   }
 
+  console.log(menuContainer);
   return menuContainer;
 };
 
@@ -133,7 +144,6 @@ var Menu = function Menu() {
   \**************************************************************************************************************/
 /***/ ((module, __webpack_exports__, __webpack_require__) => {
 
-"use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
@@ -147,7 +157,7 @@ __webpack_require__.r(__webpack_exports__);
 
 var ___CSS_LOADER_EXPORT___ = _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_1___default()((_node_modules_css_loader_dist_runtime_sourceMaps_js__WEBPACK_IMPORTED_MODULE_0___default()));
 // Module
-___CSS_LOADER_EXPORT___.push([module.id, "", "",{"version":3,"sources":[],"names":[],"mappings":"","sourceRoot":""}]);
+___CSS_LOADER_EXPORT___.push([module.id, ".menu-container {\n  display: flex;\n  flex-direction: column;\n  align-items: center;\n  gap: 16px;\n}\n\n.menu-container h2 {\n  color: white;\n  font-family: \"Quicksand\", sans-serif;\n  font-size: 48px;\n}\n\n.menu-item {\n  cursor: pointer;\n  width: 60%;\n  padding: 30px 64px;\n  display: flex;\n  gap: 8px;\n  color: white;\n  background-color: rgba(20, 20, 20, 0.621);\n}\n\n.menu-item:hover {\n  background-color: rgba(208, 208, 208, 0.24);\n}\n\n.item-image {\n  width: 128px;\n  height: 128px;\n}\n\n.item-info h3 {\n  font-family: \"Quicksand\", sans-serif;\n  font-weight: 600;\n  font-size: 24px;\n  margin-bottom: 8px;\n}\n\n.item-info p {\n  font-family: \"Quicksand\", sans-serif;\n}", "",{"version":3,"sources":["webpack://./src/styles/menuPage.css"],"names":[],"mappings":"AAAA;EACI,aAAA;EACA,sBAAA;EACA,mBAAA;EACA,SAAA;AACJ;;AACA;EACI,YAAA;EACA,oCAAA;EACA,eAAA;AAEJ;;AAAA;EACI,eAAA;EACA,UAAA;EACA,kBAAA;EACA,aAAA;EACA,QAAA;EACA,YAAA;EACA,yCAAA;AAGJ;;AADA;EACI,2CAAA;AAIJ;;AAFA;EACI,YAAA;EACA,aAAA;AAKJ;;AAHA;EACI,oCAAA;EACA,gBAAA;EACA,eAAA;EACA,kBAAA;AAMJ;;AAJA;EACI,oCAAA;AAOJ","sourcesContent":[".menu-container{\r\n    display: flex;\r\n    flex-direction: column;\r\n    align-items: center;\r\n    gap: 16px;\r\n}\r\n.menu-container h2{\r\n    color: white;\r\n    font-family: 'Quicksand', sans-serif;\r\n    font-size: 48px;\r\n}\r\n.menu-item{\r\n    cursor: pointer;\r\n    width: 60%;\r\n    padding: 30px 64px;\r\n    display: flex;\r\n    gap: 8px;\r\n    color: white;\r\n    background-color: rgba(20, 20, 20, 0.621);\r\n}\r\n.menu-item:hover{\r\n    background-color: rgba(208, 208, 208, 0.24);\r\n}\r\n.item-image{\r\n    width: 128px;\r\n    height: 128px;\r\n}\r\n.item-info h3{\r\n    font-family: 'Quicksand', sans-serif;\r\n    font-weight: 600;\r\n    font-size: 24px;\r\n    margin-bottom: 8px;\r\n}\r\n.item-info p{\r\n    font-family: 'Quicksand', sans-serif;\r\n\r\n}"],"sourceRoot":""}]);
 // Exports
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (___CSS_LOADER_EXPORT___);
 
@@ -160,7 +170,6 @@ ___CSS_LOADER_EXPORT___.push([module.id, "", "",{"version":3,"sources":[],"names
   \***********************************************************************************************************/
 /***/ ((module, __webpack_exports__, __webpack_require__) => {
 
-"use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
@@ -194,7 +203,6 @@ ___CSS_LOADER_EXPORT___.push([module.id, "/* CSS RESET */\nbody, h1, h2, h3, h4,
   \*****************************************************/
 /***/ ((module) => {
 
-"use strict";
 
 
 /*
@@ -306,7 +314,6 @@ module.exports = function (cssWithMappingToString) {
   \********************************************************/
 /***/ ((module) => {
 
-"use strict";
 
 
 module.exports = function (url, options) {
@@ -345,7 +352,6 @@ module.exports = function (url, options) {
   \************************************************************/
 /***/ ((module) => {
 
-"use strict";
 
 
 module.exports = function (item) {
@@ -377,7 +383,6 @@ module.exports = function (item) {
   \*********************************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
-"use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
@@ -432,7 +437,6 @@ var update = _node_modules_style_loader_dist_runtime_injectStylesIntoStyleTag_js
   \******************************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
-"use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
@@ -487,7 +491,6 @@ var update = _node_modules_style_loader_dist_runtime_injectStylesIntoStyleTag_js
   \****************************************************************************/
 /***/ ((module) => {
 
-"use strict";
 
 
 var stylesInDOM = [];
@@ -601,7 +604,6 @@ module.exports = function (list, options) {
   \********************************************************************/
 /***/ ((module) => {
 
-"use strict";
 
 
 var memo = {};
@@ -650,7 +652,6 @@ module.exports = insertBySelector;
   \**********************************************************************/
 /***/ ((module) => {
 
-"use strict";
 
 
 /* istanbul ignore next  */
@@ -671,7 +672,6 @@ module.exports = insertStyleElement;
   \**********************************************************************************/
 /***/ ((module, __unused_webpack_exports, __webpack_require__) => {
 
-"use strict";
 
 
 /* istanbul ignore next  */
@@ -693,7 +693,6 @@ module.exports = setAttributesWithoutAttributes;
   \***************************************************************/
 /***/ ((module) => {
 
-"use strict";
 
 
 /* istanbul ignore next  */
@@ -773,7 +772,6 @@ module.exports = domAPI;
   \*********************************************************************/
 /***/ ((module) => {
 
-"use strict";
 
 
 /* istanbul ignore next  */
@@ -793,32 +791,23 @@ module.exports = styleTagTransform;
 
 /***/ }),
 
-/***/ "./src sync recursive":
-/*!*******************!*\
-  !*** ./src/ sync ***!
-  \*******************/
-/***/ ((module) => {
-
-function webpackEmptyContext(req) {
-	var e = new Error("Cannot find module '" + req + "'");
-	e.code = 'MODULE_NOT_FOUND';
-	throw e;
-}
-webpackEmptyContext.keys = () => ([]);
-webpackEmptyContext.resolve = webpackEmptyContext;
-webpackEmptyContext.id = "./src sync recursive";
-module.exports = webpackEmptyContext;
-
-/***/ }),
-
 /***/ "./src/assets/bg.jpg":
 /*!***************************!*\
   !*** ./src/assets/bg.jpg ***!
   \***************************/
 /***/ ((module, __unused_webpack_exports, __webpack_require__) => {
 
-"use strict";
 module.exports = __webpack_require__.p + "bg.jpg";
+
+/***/ }),
+
+/***/ "./src/assets/cheese.png":
+/*!*******************************!*\
+  !*** ./src/assets/cheese.png ***!
+  \*******************************/
+/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
+
+module.exports = __webpack_require__.p + "cheese.png";
 
 /***/ }),
 
@@ -828,8 +817,57 @@ module.exports = __webpack_require__.p + "bg.jpg";
   \*****************************/
 /***/ ((module, __unused_webpack_exports, __webpack_require__) => {
 
-"use strict";
 module.exports = __webpack_require__.p + "chef.jpg";
+
+/***/ }),
+
+/***/ "./src/assets/lobster.png":
+/*!********************************!*\
+  !*** ./src/assets/lobster.png ***!
+  \********************************/
+/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
+
+module.exports = __webpack_require__.p + "lobster.png";
+
+/***/ }),
+
+/***/ "./src/assets/pizza.png":
+/*!******************************!*\
+  !*** ./src/assets/pizza.png ***!
+  \******************************/
+/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
+
+module.exports = __webpack_require__.p + "pizza.png";
+
+/***/ }),
+
+/***/ "./src/assets/steak.png":
+/*!******************************!*\
+  !*** ./src/assets/steak.png ***!
+  \******************************/
+/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
+
+module.exports = __webpack_require__.p + "steak.png";
+
+/***/ }),
+
+/***/ "./src/assets/sweet-wine.png":
+/*!***********************************!*\
+  !*** ./src/assets/sweet-wine.png ***!
+  \***********************************/
+/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
+
+module.exports = __webpack_require__.p + "sweet-wine.png";
+
+/***/ }),
+
+/***/ "./src/assets/whiskey.png":
+/*!********************************!*\
+  !*** ./src/assets/whiskey.png ***!
+  \********************************/
+/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
+
+module.exports = __webpack_require__.p + "whiskey.png";
 
 /***/ })
 
@@ -968,9 +1006,8 @@ module.exports = __webpack_require__.p + "chef.jpg";
 /******/ 	
 /************************************************************************/
 var __webpack_exports__ = {};
-// This entry need to be wrapped in an IIFE because it need to be in strict mode.
+// This entry need to be wrapped in an IIFE because it need to be isolated against other modules in the chunk.
 (() => {
-"use strict";
 /*!**********************!*\
   !*** ./src/index.js ***!
   \**********************/
@@ -981,10 +1018,30 @@ __webpack_require__.r(__webpack_exports__);
 
 
 
-document.querySelector('.page-content').append((0,_homePage__WEBPACK_IMPORTED_MODULE_1__["default"])());
-(0,_menuPage__WEBPACK_IMPORTED_MODULE_2__["default"])();
+var pageContent = document.querySelector('.page-content');
+pageContent.append((0,_homePage__WEBPACK_IMPORTED_MODULE_1__["default"])());
+var navBarLinks = document.querySelectorAll('.navbar-link');
+navBarLinks.forEach(function (navBarLink) {
+  navBarLink.addEventListener('click', function () {
+    if (navBarLink.innerHTML == "Home" && !navBarLink.classList.contains("active")) {
+      pageContent.innerHTML = "";
+      navBarLinks.forEach(function (x) {
+        x.classList.remove('active');
+      });
+      navBarLink.classList.add('active');
+      pageContent.append((0,_homePage__WEBPACK_IMPORTED_MODULE_1__["default"])());
+    } else if (navBarLink.innerHTML == "Menu" && !navBarLink.classList.contains("active")) {
+      pageContent.innerHTML = "";
+      navBarLinks.forEach(function (x) {
+        x.classList.remove('active');
+      });
+      navBarLink.classList.add('active');
+      pageContent.append((0,_menuPage__WEBPACK_IMPORTED_MODULE_2__["default"])());
+    }
+  });
+});
 })();
 
 /******/ })()
 ;
-//# sourceMappingURL=bundleb4cc8fd202c1449f318e.js.map
+//# sourceMappingURL=bundle75edd962cc3190b19f6b.js.map
