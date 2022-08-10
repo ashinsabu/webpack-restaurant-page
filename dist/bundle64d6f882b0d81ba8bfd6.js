@@ -12,19 +12,25 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
 /* harmony export */ });
+/* harmony import */ var _assets_chef_jpg__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./assets/chef.jpg */ "./src/assets/chef.jpg");
+
+
 var Home = function Home() {
   var HomeContainer = document.createElement('div');
   HomeContainer.className = "home-container";
   var slogan = document.createElement('p');
-  slogan.innerHTML = "It’s time to enjoy the finer things in life. A genuine fine-dining experience awaits you at Legato.";
+  slogan.innerHTML = "It\u2019s time to enjoy the finer things in life.";
   slogan.className = "home-slogan";
+  var slogan2 = document.createElement('p');
+  slogan2.innerHTML = "A genuine fine-dining experience awaits you at Legato.";
+  slogan2.className = "home-slogan";
   var chefImg = document.createElement('img');
-  chefImg.src = 'assets/chef.jpg';
+  chefImg.src = _assets_chef_jpg__WEBPACK_IMPORTED_MODULE_0__;
   chefImg.className = "chef-img";
   var subtext = document.createElement('p');
   subtext.innerHTML = "Order online or visit us.";
   subtext.className = "subtext";
-  HomeContainer.append(slogan, chefImg, subtext);
+  HomeContainer.append(slogan, slogan2, chefImg, subtext);
   return HomeContainer;
 };
 
@@ -58,7 +64,7 @@ ___CSS_LOADER_EXPORT___.push([module.id, "@import url(https://fonts.googleapis.c
 ___CSS_LOADER_EXPORT___.push([module.id, "@import url(https://fonts.googleapis.com/css2?family=Montserrat&display=swap);"]);
 var ___CSS_LOADER_URL_REPLACEMENT_0___ = _node_modules_css_loader_dist_runtime_getUrl_js__WEBPACK_IMPORTED_MODULE_2___default()(___CSS_LOADER_URL_IMPORT_0___);
 // Module
-___CSS_LOADER_EXPORT___.push([module.id, "/* CSS RESET */\nbody, h1, h2, h3, h4, h5, h6, p, ol, ul {\n  margin: 0;\n  padding: 0;\n  font-weight: normal;\n  font-family: \"Segoe UI\", Tahoma, Geneva, Verdana, sans-serif;\n}\n\nol, ul {\n  list-style: none;\n}\n\nimg {\n  max-width: 100%;\n  height: auto;\n}\n\na {\n  text-decoration: none;\n}\n\n/* DONE */\nbody {\n  background-image: url(" + ___CSS_LOADER_URL_REPLACEMENT_0___ + ");\n  background-repeat: no-repeat;\n  background-attachment: fixed;\n  background-size: cover;\n}\n\n.header {\n  display: flex;\n  flex-direction: column;\n  align-items: center;\n  color: white;\n  padding: 32px;\n  padding-top: 0;\n  background-color: rgba(20, 20, 20, 0.685);\n}\n\n.title {\n  font-family: \"Quicksand\", sans-serif;\n  font-size: 64px;\n  font-weight: 400;\n  padding: 32px;\n}\n\n.navbar {\n  display: flex;\n  gap: 24px;\n  font-size: 22px;\n  font-family: \"Montserrat\", sans-serif;\n}\n\n.navbar-link {\n  padding: 8px;\n  cursor: pointer;\n  transition: transform 0.3s ease-in-out;\n}\n\n.navbar-link:hover {\n  transform: translateY(-5px);\n}\n\n.navbar-link.active {\n  border-bottom: 1.5px solid white;\n}", "",{"version":3,"sources":["webpack://./src/styles/style.css"],"names":[],"mappings":"AAIA,cAAA;AACA;EACI,SAAA;EACA,UAAA;EACA,mBAAA;EACA,4DAAA;AADJ;;AAIA;EACI,gBAAA;AADJ;;AAIA;EACI,eAAA;EACA,YAAA;AADJ;;AAGA;EACI,qBAAA;AAAJ;;AAIA,SAAA;AAEA;EACI,yDAAA;EACA,4BAAA;EACA,4BAAA;EACA,sBAAA;AAFJ;;AAIA;EACI,aAAA;EACA,sBAAA;EACA,mBAAA;EACA,YAAA;EACA,aAAA;EACA,cAAA;EACA,yCAAA;AADJ;;AAGA;EACI,oCAAA;EACA,eAAA;EACA,gBAAA;EACA,aAAA;AAAJ;;AAEA;EACI,aAAA;EACA,SAAA;EACA,eAAA;EACA,qCAAA;AACJ;;AACA;EACI,YAAA;EACA,eAAA;EACA,sCAAA;AAEJ;;AAAA;EACI,2BAAA;AAGJ;;AADA;EACI,gCAAA;AAIJ","sourcesContent":["@import url('https://fonts.googleapis.com/css2?family=Quicksand&display=swap');\r\n@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');\r\n\r\n\r\n/* CSS RESET */  \r\nbody, h1, h2, h3, h4, h5, h6, p, ol, ul {\r\n    margin: 0;\r\n    padding: 0;\r\n    font-weight: normal;\r\n    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;\r\n}\r\n  \r\nol, ul {\r\n    list-style: none;\r\n}\r\n  \r\nimg {\r\n    max-width: 100%;\r\n    height: auto;\r\n}\r\na{\r\n    text-decoration: none;\r\n}\r\n\r\n\r\n/* DONE */\r\n\r\nbody{\r\n    background-image: url(\"../assets/bg.jpg\");\r\n    background-repeat: no-repeat;\r\n    background-attachment: fixed;\r\n    background-size: cover;\r\n}\r\n.header{\r\n    display: flex;\r\n    flex-direction: column;\r\n    align-items: center;\r\n    color: white;\r\n    padding: 32px;\r\n    padding-top: 0;\r\n    background-color: rgba(20, 20, 20, 0.685);\r\n}\r\n.title{\r\n    font-family: 'Quicksand', sans-serif;\r\n    font-size: 64px;\r\n    font-weight: 400;\r\n    padding: 32px;\r\n}\r\n.navbar{\r\n    display: flex;\r\n    gap: 24px;\r\n    font-size: 22px;\r\n    font-family: 'Montserrat', sans-serif;\r\n}\r\n.navbar-link{\r\n    padding: 8px;\r\n    cursor: pointer;\r\n    transition: transform 0.3s ease-in-out;\r\n}\r\n.navbar-link:hover{\r\n    transform: translateY(-5px);\r\n}\r\n.navbar-link.active{    \r\n    border-bottom: 1.5px solid white;\r\n}"],"sourceRoot":""}]);
+___CSS_LOADER_EXPORT___.push([module.id, "/* CSS RESET */\nbody, h1, h2, h3, h4, h5, h6, p, ol, ul {\n  margin: 0;\n  padding: 0;\n  font-weight: normal;\n  font-family: \"Segoe UI\", Tahoma, Geneva, Verdana, sans-serif;\n}\n\nol, ul {\n  list-style: none;\n}\n\nimg {\n  max-width: 100%;\n  height: auto;\n}\n\na {\n  text-decoration: none;\n}\n\n/* DONE */\nbody {\n  background-image: url(" + ___CSS_LOADER_URL_REPLACEMENT_0___ + ");\n  background-repeat: no-repeat;\n  background-attachment: fixed;\n  background-size: cover;\n}\n\n.content {\n  display: flex;\n  flex-direction: column;\n  align-items: center;\n}\n\n.header {\n  display: flex;\n  flex-direction: column;\n  align-items: center;\n  width: 100%;\n  color: white;\n  padding: 32px;\n  padding-top: 0;\n  background-color: rgba(20, 20, 20, 0.685);\n}\n\n.title {\n  font-family: \"Quicksand\", sans-serif;\n  font-size: 64px;\n  font-weight: 400;\n  padding: 32px;\n}\n\n.navbar {\n  display: flex;\n  gap: 24px;\n  font-size: 22px;\n  font-family: \"Montserrat\", sans-serif;\n}\n\n.navbar-link {\n  padding: 8px;\n  cursor: pointer;\n  transition: transform 0.3s ease-in-out;\n}\n\n.navbar-link:hover {\n  transform: translateY(-5px);\n}\n\n.navbar-link.active {\n  border-bottom: 1.5px solid white;\n}\n\n.page-content {\n  max-width: 700px;\n  padding: 4rem;\n  margin: 6rem 0;\n  background-color: rgba(20, 20, 20, 0.685);\n  border: 1px solid rgba(113, 113, 113, 0.719);\n}\n\n.home-container {\n  color: rgba(255, 255, 255, 0.819);\n  display: flex;\n  flex-direction: column;\n  align-items: center;\n  text-align: center;\n  font-family: \"Montserrat\", sans-serif;\n  font-size: 20px;\n}\n\n.home-slogan {\n  margin-bottom: 16px;\n}\n\n.chef-img {\n  width: 256px;\n  height: 320px;\n  border-radius: 50%;\n  margin-top: 32px;\n  margin-bottom: 32px;\n}", "",{"version":3,"sources":["webpack://./src/styles/style.css"],"names":[],"mappings":"AAIA,cAAA;AACA;EACI,SAAA;EACA,UAAA;EACA,mBAAA;EACA,4DAAA;AADJ;;AAIA;EACI,gBAAA;AADJ;;AAIA;EACI,eAAA;EACA,YAAA;AADJ;;AAGA;EACI,qBAAA;AAAJ;;AAIA,SAAA;AAEA;EACI,yDAAA;EACA,4BAAA;EACA,4BAAA;EACA,sBAAA;AAFJ;;AAIA;EACI,aAAA;EACA,sBAAA;EACA,mBAAA;AADJ;;AAGA;EACI,aAAA;EACA,sBAAA;EACA,mBAAA;EACA,WAAA;EACA,YAAA;EACA,aAAA;EACA,cAAA;EACA,yCAAA;AAAJ;;AAEA;EACI,oCAAA;EACA,eAAA;EACA,gBAAA;EACA,aAAA;AACJ;;AACA;EACI,aAAA;EACA,SAAA;EACA,eAAA;EACA,qCAAA;AAEJ;;AAAA;EACI,YAAA;EACA,eAAA;EACA,sCAAA;AAGJ;;AADA;EACI,2BAAA;AAIJ;;AAFA;EACI,gCAAA;AAKJ;;AAFA;EACI,gBAAA;EACA,aAAA;EACA,cAAA;EACA,yCAAA;EACA,4CAAA;AAKJ;;AAFA;EACI,iCAAA;EACA,aAAA;EACA,sBAAA;EACA,mBAAA;EACA,kBAAA;EACA,qCAAA;EACA,eAAA;AAKJ;;AAHA;EACI,mBAAA;AAMJ;;AAJA;EACI,YAAA;EACA,aAAA;EACA,kBAAA;EACA,gBAAA;EACA,mBAAA;AAOJ","sourcesContent":["@import url('https://fonts.googleapis.com/css2?family=Quicksand&display=swap');\r\n@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');\r\n\r\n\r\n/* CSS RESET */  \r\nbody, h1, h2, h3, h4, h5, h6, p, ol, ul {\r\n    margin: 0;\r\n    padding: 0;\r\n    font-weight: normal;\r\n    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;\r\n}\r\n  \r\nol, ul {\r\n    list-style: none;\r\n}\r\n  \r\nimg {\r\n    max-width: 100%;\r\n    height: auto;\r\n}\r\na{\r\n    text-decoration: none;\r\n}\r\n\r\n\r\n/* DONE */\r\n\r\nbody{\r\n    background-image: url(\"../assets/bg.jpg\");\r\n    background-repeat: no-repeat;\r\n    background-attachment: fixed;\r\n    background-size: cover;\r\n}\r\n.content{\r\n    display: flex;\r\n    flex-direction: column;\r\n    align-items: center;\r\n}\r\n.header{\r\n    display: flex;\r\n    flex-direction: column;\r\n    align-items: center;\r\n    width: 100%;\r\n    color: white;\r\n    padding: 32px;\r\n    padding-top: 0;\r\n    background-color: rgba(20, 20, 20, 0.685);\r\n}\r\n.title{\r\n    font-family: 'Quicksand', sans-serif;\r\n    font-size: 64px;\r\n    font-weight: 400;\r\n    padding: 32px;\r\n}\r\n.navbar{\r\n    display: flex;\r\n    gap: 24px;\r\n    font-size: 22px;\r\n    font-family: 'Montserrat', sans-serif;\r\n}\r\n.navbar-link{\r\n    padding: 8px;\r\n    cursor: pointer;\r\n    transition: transform 0.3s ease-in-out;\r\n}\r\n.navbar-link:hover{\r\n    transform: translateY(-5px);\r\n}\r\n.navbar-link.active{    \r\n    border-bottom: 1.5px solid white;\r\n}\r\n\r\n.page-content{\r\n    max-width: 700px;\r\n    padding: 4rem;\r\n    margin: 6rem 0;\r\n    background-color: rgba(20, 20, 20, 0.685);\r\n    border: 1px solid rgba(113, 113, 113, 0.719);\r\n    \r\n}\r\n.home-container{\r\n    color: rgba(255, 255, 255, 0.819);\r\n    display: flex;\r\n    flex-direction: column;\r\n    align-items: center;\r\n    text-align: center;\r\n    font-family: 'Montserrat', sans-serif;\r\n    font-size: 20px;\r\n}\r\n.home-slogan{\r\n    margin-bottom: 16px;\r\n}\r\n.chef-img{\r\n    width: 256px;\r\n    height: 320px;\r\n    border-radius: 50%;\r\n    margin-top: 32px;\r\n    margin-bottom: 32px;\r\n}\r\n"],"sourceRoot":""}]);
 // Exports
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (___CSS_LOADER_EXPORT___);
 
@@ -613,6 +619,16 @@ module.exports = styleTagTransform;
 
 module.exports = __webpack_require__.p + "bg.jpg";
 
+/***/ }),
+
+/***/ "./src/assets/chef.jpg":
+/*!*****************************!*\
+  !*** ./src/assets/chef.jpg ***!
+  \*****************************/
+/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
+
+module.exports = __webpack_require__.p + "chef.jpg";
+
 /***/ })
 
 /******/ 	});
@@ -758,6 +774,8 @@ var __webpack_exports__ = {};
 __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _styles_style_css__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./styles/style.css */ "./src/styles/style.css");
 /* harmony import */ var _homePage__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./homePage */ "./src/homePage.js");
+/* harmony import */ var _assets_chef_jpg__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./assets/chef.jpg */ "./src/assets/chef.jpg");
+
 
 
 document.querySelector('.page-content').append((0,_homePage__WEBPACK_IMPORTED_MODULE_1__["default"])());
@@ -765,4 +783,4 @@ document.querySelector('.page-content').append((0,_homePage__WEBPACK_IMPORTED_MO
 
 /******/ })()
 ;
-//# sourceMappingURL=bundle91fa44a47b63c90cf52e.js.map
+//# sourceMappingURL=bundle64d6f882b0d81ba8bfd6.js.map
