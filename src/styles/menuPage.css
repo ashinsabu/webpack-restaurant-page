@@ -1,9 +1,37 @@
 .menu-container{
-    
-    
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 16px;
+}
+.menu-container h2{
+    color: white;
+    font-family: 'Quicksand', sans-serif;
+    font-size: 48px;
 }
 .menu-item{
+    cursor: pointer;
+    width: 60%;
+    padding: 30px 64px;
+    display: flex;
+    gap: 8px;
     color: white;
-    background-color: rgba(20, 20, 20, 0.733);
-    border: 1px solid rgba(113, 113, 113, 0.719);
+    background-color: rgba(20, 20, 20, 0.621);
+}
+.menu-item:hover{
+    background-color: rgba(208, 208, 208, 0.24);
+}
+.item-image{
+    width: 128px;
+    height: 128px;
+}
+.item-info h3{
+    font-family: 'Quicksand', sans-serif;
+    font-weight: 600;
+    font-size: 24px;
+    margin-bottom: 8px;
+}
+.item-info p{
+    font-family: 'Quicksand', sans-serif;
+
 }

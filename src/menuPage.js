@@ -4,6 +4,9 @@ import FoodObject from './foods';
 const Menu = () => {
     const menuContainer = document.createElement('div');
     menuContainer.className = 'menu-container';
+    const mainTitle = document.createElement('h2');
+    mainTitle.textContent = "Our Menu";
+    menuContainer.append(mainTitle);
     const foods = FoodObject['foods'];
     for(let i=0;i<foods.length;i++){
         const menuItem = document.createElement('div');
