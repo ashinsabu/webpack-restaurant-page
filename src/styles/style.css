@@ -42,8 +42,7 @@ body{
     align-items: center;
     width: 100%;
     color: white;
-    padding: 32px;
-    padding-top: 0;
+    padding-bottom: 32px;
     background-color: rgba(20, 20, 20, 0.685);
 }
 .title{
@@ -96,4 +95,15 @@ body{
     border-radius: 50%;
     margin-top: 32px;
     margin-bottom: 32px;
+}
+.footer{
+    padding-top: 16px;
+    padding-bottom: 16px;
+    width: 100%;
+    text-align: center;
+    color: rgba(255, 255, 255, 0.819);
+    background-color: rgba(20, 20, 20, 0.685);
+}
+.footer a{
+    color: grey;
 }
